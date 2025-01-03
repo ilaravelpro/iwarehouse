@@ -1,0 +1,35 @@
+{
+    "name": "ilaravel/iwarehouse",
+    "description": "iLaravel iWarehouse",
+    "keywords": ["laravel","auto pro", "warehouse", "shop", "order"],
+    "homepage": "https://ilaravel.iamir.net/packages/iwarehouse",
+    "license": "MIT",
+    "authors": [
+        {
+            "name" : "iamirnet",
+            "email" : "me@iamir.net"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "src"
+        ],
+        "psr-4": {
+            "iLaravel\\iWarehouse\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "iLaravel\\iWarehouse\\Providers\\AppServiceProvider",
+                "iLaravel\\iWarehouse\\Providers\\RouteServiceProvider",
+                "iLaravel\\iWarehouse\\Providers\\AuthServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
