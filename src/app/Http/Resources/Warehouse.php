@@ -7,7 +7,7 @@
  * Copyright (c) 2020. Powered by iamir.net
  */
 
-namespace iLaravel\iBook\iApp\Http\Resources;
+namespace iLaravel\iWarehouse\iApp\Http\Resources;
 
 use iLaravel\Core\iApp\Http\Resources\Resource;
 use iLaravel\iLocation\iApp\Http\Resources\Address;
