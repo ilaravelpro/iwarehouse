@@ -70,7 +70,7 @@ class Warehouse extends \iLaravel\Core\iApp\Model
                     'summary' => "nullable|string",
                     'content' => "nullable|string",
                     'is_default' => "nullable|boolean",
-                    'status' => 'nullable|in:' . join(',', iconfig('status.warehouses', iconfig('status.global'))),
+                    'status' => 'nullable|in:' . join(',', $this->_statuses()),
                 ]);
                 break;
             case 'additional':
