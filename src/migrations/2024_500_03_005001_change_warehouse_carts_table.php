@@ -18,7 +18,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('orders', function (Blueprint $table) {
+        Schema::table('carts', function (Blueprint $table) {
             $table->bigInteger('warehouse_id')->nullable()->unsigned()->after('creator_id');
             $table->foreign('warehouse_id')->references('id')->on('warehouses')->onDelete('cascade');
         });
@@ -31,7 +31,7 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('orders', function($table) {
+        Schema::table('carts', function($table) {
             $table->dropColumn('warehouse_id');
         });
     }
